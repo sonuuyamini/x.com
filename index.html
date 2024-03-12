@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Twitter UI</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        textarea {
+  resize: none;
+}
+.mb-3 > button{
+float: right;
+}
+.panel-header{
+    font-weight: bolder;
+}
+
+.panel-header>h4{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+}
+.p-name{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 600;
+}
+::placeholder{
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-size: larger;
+}
+    </style>
+</head>
+<body>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">                        
+                    <img height="40" src="yamini.jpg"  class="rounded-circle mr-2" style="float: right;">
+                    <h5 class="p-name" class="card-title">G Yamini</h5>
+                    <small class="card-text">@yamini_g109</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Main Content -->
+            <div class="card">
+                <div class="card-body">
+                    <!-- Tweet input and timeline go here -->
+                    <div class="mb-3">
+                        <textarea class="form-control" cols="15" placeholder="What's happening?"></textarea>
+                        <button class="btn btn-dark mt-2">Post</button>
+                    </div>
+                    <br>
+                    <br>
+                    <!-- Sample Tweet -->
+                    <div id="posts" class="container mt-3">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <!-- Twitter Post Card -->
+                                <div class="card post-card">
+                                    <!-- Post Header -->
+                                    <div class="card-header post-header">
+                                        <img height="40" src="https://pbs.twimg.com/profile_images/1758058601095012352/z5OVuw8W_400x400.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                        <strong>Karma Shopping</strong>
+                                        <span class="text-muted">@karma_shopping • 10m</span>
+                                    </div>
+                    
+                                    <!-- Post Body -->
+                                    <div class="card-body post-body">
+                                        <p>Don't overpay on Amazon again! You're welcome.</p>
+                                        <!-- You can add images, links, etc. here -->
+                                        <img height="250" style="border-radius: 8px;" src="https://pbs.twimg.com/media/GEHGZLUWkAAUDg4?format=png&name=small" alt="User Avatar">
+
+                                    </div>
+                    
+                                    <!-- Post Footer (Likes, Retweets, etc.) -->
+                                    <div class="card-footer post-footer">
+                                        <button class="btn btn-outline-primary btn-sm">Like</button>
+                                        <button class="btn btn-outline-secondary btn-sm">Retweet</button>
+                                        <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card post-card">
+                                    <!-- Post Header -->
+                                    <div class="card-header post-header">
+                                        <img height="40" src="https://pbs.twimg.com/profile_images/1695127225182429185/N7nEGG32_400x400.jpg" alt="User Avatar" class="rounded-circle mr-2">
+                                        <strong>Tom Shaw</strong>
+                                        <span class="text-muted">@tomshaw_dev · Mar 10</span>
+                                    </div>
+                    
+                                    <!-- Post Body -->
+                                    <div class="card-body post-body">
+                                        <p>Does anyone have any advice for publishing your first open-source project? 💻
+
+                                            I’ve never done it before but I’m thinking of doing it one of my side-projects 🤔</p>
+                                            <img height="250" style="border-radius: 8px;" src="https://pbs.twimg.com/media/GISZXEYWkAA7DgB?format=jpg&name=medium" alt="User Avatar">
+                                        <!-- You can add images, links, etc. here -->
+                                    </div>
+                    
+                                    <!-- Post Footer (Likes, Retweets, etc.) -->
+                                    <div class="card-footer post-footer">
+                                        <button class="btn btn-outline-primary btn-sm">Like</button>
+                                        <button class="btn btn-outline-secondary btn-sm">Retweet</button>
+                                        <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="card post-card">
+                                    <!-- Post Header -->
+                                    <div class="card-header post-header">
+                                        <img height="40" src="https://pbs.twimg.com/profile_images/1534945114807644173/h22f7y8F_400x400.png" alt="User Avatar" class="rounded-circle mr-2">
+                                        <strong>Postman</strong>
+                                        <span class="text-muted">@getpostman · Mar 9</span>
+                                    </div>
+                    
+                                    <!-- Post Body -->
+                                    <div class="card-body post-body">
+                                        <p>We 🧡 helping our customers learn about #APIs. And this inspired us to build the Postman Academy. Explore our catalog of courses here and get started today: https://academy.postman.com/page/course-catalog</p>
+                                        <!-- You can add images, links, etc. here -->
+                                        <img height="250" style="border-radius: 8px;" src="https://pbs.twimg.com/media/GIPZUqWWMAEiSqT?format=jpg&name=large" alt="User Avatar">
+                                    </div>
+                    
+                                    <!-- Post Footer (Likes, Retweets, etc.) -->
+                                    <div class="card-footer post-footer">
+                                        <button class="btn btn-outline-primary btn-sm">Like</button>
+                                        <button class="btn btn-outline-secondary btn-sm">Retweet</button>
+                                        <button class="btn btn-outline-info btn-sm">Comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more tweets as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <!-- Right Sidebar -->
+            <div class="card" >
+                <div class="card-body">
+                    <!-- Suggestions and trends go here -->
+      
+                    <!-- Add more content as needed -->
+
+                    <div class="content-panel">
+                        <div class="panel-header">
+                          <h4>What’s happening</h4>
+                        </div>
+                        <!-- Who to Follow panel -->
+                        <div class="panel-content">
+                          <!--Follow list -->
+                          <ol class="tweet-list">
+                            <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <small>Trending in India</small> <br>
+                                    <span class="fullname">
+                                  <strong>NEET</strong>
+                                </span>
+                                <!-- <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button> -->
+                                  </div>
+                                  <small>11.6K posts</small>
+                                </div>
+                              </li>
+                              <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <small>Politics · Trending</small> <br>
+                                    <span class="fullname">
+                                  <strong>#CAARules</strong>
+                                </span>
+                                <!-- <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button> -->
+                                  </div>
+                                  <small>126K posts</small>
+                                </div>
+                              </li>
+                              <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <small>Trending in India</small> <br>
+                                    <span class="fullname">
+                                  <strong>मुख्यमंत्री मनोहर लाल</strong>
+                                </span>
+                                <!-- <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button> -->
+                                  </div>
+                                  <small>2,266 posts</small>
+                                </div>
+                              </li>
+                          </ol>
+                        </div>
+                      </div>
+
+
+                      <div class="content-panel">
+                        <div class="panel-header">
+                          <h4>Who to follow</h4>
+                        </div>
+                        <!-- Who to Follow panel -->
+                        <div class="panel-content">
+                          <!--Follow list -->
+                          <ol class="tweet-list">
+                            <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <span class="fullname">
+                                  <strong>
+                                    Hack This Fall</strong>
+                                </span>
+                                <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button>
+                                  </div>
+                                  <span class="username">@hackthisfall</span>
+                                </div>
+                              </li>
+                            <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <span class="fullname">
+                                  <strong>Elon Musk</strong>
+                                </span>
+                                <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button>
+                                  </div>
+                                  <span class="username">@elonmusk</span>
+                                </div>
+                              </li>
+                            <li class="tweet-card">
+                                <div class="tweet-content">
+                                  <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+                                  <div class="tweet-header">
+                                    <span class="fullname">
+                                  <strong>Dhruv Jurel</strong>
+                                </span>
+                                <button type="button" class="btn btn-dark btn-rounded" style="float: right;">Follow</button>
+                                  </div>
+                                  <span class="username">@dhruvjurel21</span>
+                                </div>
+                              </li>
+                          </ol>
+
+                          <button class="btn btn-link"><a href="" style="text-decoration:none" >Show more</a></button>
+                          <!--END: Follow list -->
+                        </div>
+                      </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
